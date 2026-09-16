@@ -51,7 +51,7 @@ with st.form("prediction_form"):
 # 3. Handle Prediction Logic upon form submission
 if submit_button:
     # Compile the form inputs into a dictionary matching your PyCaret model's features
-    input_data = {'IDCabang': IDCabang,'KategoriKota': KategoriKota,'Wilayah': Wilayah,'JumlahNasabahAktif': JumlahNasabahAktif,'JumlahTeller': JumlahTeller,'JumlahPegawai': JumlahPegawai,'JumlahATM': JumlahATM,'LuasCabang_m2': LuasCabang_m2,'UmurCabang_tahun': UmurCabang_tahun,'JamOperasionalPerHari': JamOperasionalPerHari,'TransaksiHarian': TransaksiHarian,'TransaksiBulanan': TransaksiBulanan,'SkorKepuasanNasabah': SkorKepuasanNasabah,'KodeInternal': KodeInternal}    
+    input_data = {'KategoriKota': KategoriKota,'Wilayah': Wilayah,'JumlahNasabahAktif': JumlahNasabahAktif,'JumlahTeller': JumlahTeller,'JumlahPegawai': JumlahPegawai,'JumlahATM': JumlahATM,'LuasCabang_m2': LuasCabang_m2,'UmurCabang_tahun': UmurCabang_tahun,'JamOperasionalPerHari': JamOperasionalPerHari,'TransaksiHarian': TransaksiHarian,'TransaksiBulanan': TransaksiBulanan,'SkorKepuasanNasabah': SkorKepuasanNasabah,'KodeInternal': KodeInternal}    
     
     # Convert input dict to DataFrame
     df = pd.DataFrame([input_data])
