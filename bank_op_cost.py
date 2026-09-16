@@ -22,19 +22,19 @@ with st.form("prediction_form"):
     col1,col2 = st.columns(2)
     
     with col1:
-        JumlahNasabahAktif = st.number_input("JumlahNasabahAktif", min_value=0.0, value=5943)
-        JumlahTeller = st.number_input("JumlahTeller", min_value=0.0, value=2)
-        JumlahPegawai = st.number_input("JumlahPegawai", min_value=0.0, value=8)
-        JumlahATM = st.number_input("JumlahATM", min_value=0.0, value=4)
+        JumlahNasabahAktif = st.number_input("JumlahNasabahAktif", min_value=0, value=5943)
+        JumlahTeller = st.number_input("JumlahTeller", min_value=0, value=2)
+        JumlahPegawai = st.number_input("JumlahPegawai", min_value=0, value=8)
+        JumlahATM = st.number_input("JumlahATM", min_value=0, value=4)
         LuasCabang_m2 = st.number_input("LuasCabang_m2", min_value=0.0, value=466.0)
      
     with col2:        
-        UmurCabang_tahun = st.number_input("UmurCabang_tahun", min_value=0.0, value=5)
+        UmurCabang_tahun = st.number_input("UmurCabang_tahun", min_value=0, value=5)
         JamOperasionalPerHari = st.number_input("JamOperasionalPerHari", min_value=0.0, value=9.6)
-        TransaksiHarian = st.number_input("TransaksiHarian", min_value=0.0, value=366)
-        TransaksiBulanan = st.number_input("TransaksiBulanan", min_value=0.0, value=8059)
+        TransaksiHarian = st.number_input("TransaksiHarian", min_value=0, value=366)
+        TransaksiBulanan = st.number_input("TransaksiBulanan", min_value=0, value=8059)
         SkorKepuasanNasabah = st.number_input("SkorKepuasanNasabah", min_value=0.0, value=4.48)
-        KodeInternal = st.number_input("KodeInternal", min_value=0.0, value=3457)
+        KodeInternal = st.number_input("KodeInternal", min_value=0, value=3457)
 
     st.subheader("Numerical Inputs")
     col3,col4 = st.columns(2)
