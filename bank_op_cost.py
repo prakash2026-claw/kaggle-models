@@ -18,7 +18,7 @@ st.write("Fill out the product,client and worker realted details below to check 
 
 # 2. Build the Form Interface
 with st.form("prediction_form"):
-    st.subheader("Categorical Inputs")
+    st.subheader("Numerical Inputs")
     col1,col2 = st.columns(2)
     
     with col1:
@@ -36,7 +36,7 @@ with st.form("prediction_form"):
         SkorKepuasanNasabah = st.number_input("SkorKepuasanNasabah", min_value=0.0, value=4.48)
         KodeInternal = st.number_input("KodeInternal", min_value=0, value=3457)
 
-    st.subheader("Numerical Inputs")
+    st.subheader("Categorical Inputs")
     col3,col4 = st.columns(2)
     
     with col3:
