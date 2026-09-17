@@ -24,13 +24,13 @@ with st.form("prediction_form"):
     with col1:
         X_Position = st.number_input("X_Position", min_value=0.0, value=98.58666575005762)
         Velocity = st.number_input("Velocity", min_value=0.0, value=7.5511267713932995)
-        Altitude = st.number_input("Altitude", min_value=-1.0, value=-28.0)
-        Fuel_Level = st.number_input("Fuel_Level", min_value=-1.0, value=-20.15839350086838)
+        Altitude = st.number_input("Altitude", min_value=-100.0, value=-28.0)
+        Fuel_Level = st.number_input("Fuel_Level", min_value=-100.0, value=-20.15839350086838)
      
     with col2:        
         Signal_Strength = st.number_input("Signal_Strength", min_value=0.0, value=14.817947157134617)
         Battery_Temp = st.number_input("Battery_Temp", min_value=0.0, value=1.0384929611720055)
-        Solar_Exposure = st.number_input("Solar_Exposure", min_value=-1.0, value=-5.760837892713907)
+        Solar_Exposure = st.number_input("Solar_Exposure", min_value=-100.0, value=-5.760837892713907)
 
     # Submit button for the form
     submit_button = st.form_submit_button("Predict Satellite Position")
