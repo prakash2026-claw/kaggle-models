@@ -31,31 +31,6 @@ with st.form("prediction_form"):
         Signal_Strength = st.number_input("Signal_Strength", min_value=0.0, value=14.817947157134617)
         Battery_Temp = st.number_input("Battery_Temp", min_value=0.0, value=1.0384929611720055)
         Solar_Exposure = st.number_input("Solar_Exposure", min_value=0.0, value=-5.760837892713907)
-        
-    # st.subheader("Integer number Inputs")
-    # col1,col2 = st.columns(2)
-    
-    # with col1:
-        # JumlahNasabahAktif = st.number_input("JumlahNasabahAktif", min_value=0, value=5943)
-        # JumlahTeller = st.number_input("JumlahTeller", min_value=0, value=2)
-        # JumlahPegawai = st.number_input("JumlahPegawai", min_value=0, value=8)
-        # JumlahATM = st.number_input("JumlahATM", min_value=0, value=4)
-
-     
-    # with col2:        
-        # UmurCabang_tahun = st.number_input("UmurCabang_tahun", min_value=0, value=5)
-        # TransaksiHarian = st.number_input("TransaksiHarian", min_value=0, value=366)
-        # TransaksiBulanan = st.number_input("TransaksiBulanan", min_value=0, value=8059)
-        # KodeInternal = st.number_input("KodeInternal", min_value=0, value=3457)        
-
-    # st.subheader("Categorical Inputs")
-    # col3,col4 = st.columns(2)
-    
-    # with col3:
-        # KategoriKota = st.text_input("KategoriKota", "Kota Besar")
-        
-    # with col4:
-        # Wilayah = st.text_input("Wilayah", "Jawa Timur")
 
     # Submit button for the form
     submit_button = st.form_submit_button("Predict Satellite Position")
