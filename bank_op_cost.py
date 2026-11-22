@@ -14,6 +14,7 @@ def get_model():
 model = get_model()
 
 st.title("🏥 Bank Operational Cost Prediction Dashboard")
+st.link_button("Go to kaggle completion page", "https://www.kaggle.com/competitions/prediksi-biaya-operasional-cabang-odp-b-2-2026")
 st.write("Fill out the product,client and worker realted details below to check the Bank Operational Cost prediction.")
 
 # 2. Build the Form Interface
