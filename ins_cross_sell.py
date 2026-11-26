@@ -1,5 +1,5 @@
 import pandas as pd
-from pycaret.regression import load_model, predict_model
+from pycaret.classification import load_model, predict_model
 import streamlit as st
 
 # Set page configurations
