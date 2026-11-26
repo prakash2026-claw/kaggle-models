@@ -10,7 +10,7 @@ st.set_page_config(page_title="Insurance Cross Selling Predictor", layout="cente
 def get_model():
     # Make sure model is in the same directory as this script
     # ins_cross_sell
-    return load_model("sat_pos")
+    return load_model("ins_cross_sell")
 
 model = get_model()
 
