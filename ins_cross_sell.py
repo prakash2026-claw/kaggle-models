@@ -81,6 +81,7 @@ if submit_button:
         st.metric(label="Insurance Cross Selling Result", value=f"Response: {prediction_label}")
         # st.metric(label="Risk Status Result", value=f"Class: {prediction_label}")
         st.metric(label="Prediction Confidence Scores", value=f"Class 0 Score:{prediction_score_0}, Class 1 Score:{prediction_score_1}")
-        st.write("### Few useful plots:")
+        st.caption("Few useful plots:")
+        st.info("Few useful plots:")
         st.image("ins_cross_sell_FeatureImportance.png")
       
