@@ -17,6 +17,16 @@ model = get_model()
 st.title("🏥 Insurance Cross Selling Prediction Dashboard")
 #st.link_button("Go to kaggle completion page", "https://www.kaggle.com/competitions/prediksi-biaya-operasional-cabang-odp-b-2-2026")
 st.write("Visit [Kaggle competition page](https://www.kaggle.com/competitions/playground-series-s4e7) for more details.")
+
+ins_cross_sell_sample_train = pd.read_csv("ins_cross_sell_sample_train.csv")
+ins_cross_sell_sample_test = pd.read_csv("ins_cross_sell_sample_test.csv")
+
+with st.expander("View Sample Train Data (Copy & paste values below to test)"):
+    st.dataframe(ins_cross_sell_sample_train, hide_index=True, use_container_width=True)
+
+with st.expander("View Sample Unseen Data (Copy & paste values below to test)"):
+    st.dataframe(ins_cross_sell_sample_test, hide_index=True, use_container_width=True)
+
 st.write("Fill out the client realted details below to check the Insurance Cross Selling prediction.")
 
 # 2. Build the Form Interface
