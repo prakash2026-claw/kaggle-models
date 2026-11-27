@@ -1,0 +1,4 @@
+id,Gender,Age,Driving_License,Region_Code,Previously_Insured,Vehicle_Age,Vehicle_Damage,Annual_Premium,Policy_Sales_Channel,Vintage
+13992702,Male,41,1,47.0,0,1-2 Year,Yes,40255.0,26.0,158
+11616814,Female,27,1,50.0,1,< 1 Year,No,29366.0,152.0,258
+17046569,Male,23,1,47.0,1,< 1 Year,No,33807.0,152.0,96
