@@ -25,7 +25,7 @@ with st.expander():
     st.info("View Sample Train Data (Copy & paste values below to test)")
     st.dataframe(ins_cross_sell_sample_train, hide_index=True, use_container_width=True)
 
-with st.expander():]
+with st.expander():
     st.info("View Sample Unseen Data (Copy & paste values below to test)")
     st.dataframe(ins_cross_sell_sample_test, hide_index=True, use_container_width=True)
 
