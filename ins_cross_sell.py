@@ -21,10 +21,10 @@ st.write("Visit [Kaggle competition page](https://www.kaggle.com/competitions/pl
 ins_cross_sell_sample_train = pd.read_csv("ins_cross_sell_sample_train.csv")
 ins_cross_sell_sample_test = pd.read_csv("ins_cross_sell_sample_test.csv")
 
-with st.expander("View Sample Train Data (Copy & paste values below to test)"):
+with st.expander("View :green-background[Sample Train Data] (Copy & paste values below to test)"):
     st.dataframe(ins_cross_sell_sample_train, hide_index=True, use_container_width=True)
 
-with st.expander("View Sample Unseen Data (Copy & paste values below to test)"):
+with st.expander("View :blue-background[Sample Unseen Data] (Copy & paste values below to test)"):
     st.dataframe(ins_cross_sell_sample_test, hide_index=True, use_container_width=True)
 
 st.write("Fill out the client realted details below to check the Insurance Cross Selling prediction.")
@@ -81,7 +81,6 @@ if submit_button:
         st.metric(label="Insurance Cross Selling Result", value=f"Response: {prediction_label}")
         # st.metric(label="Risk Status Result", value=f"Class: {prediction_label}")
         st.metric(label="Prediction Confidence Scores", value=f"Class 0 Score:{prediction_score_0}, Class 1 Score:{prediction_score_1}")
-        st.caption("Few useful plots:")
         st.info("Few useful plots:")
         st.image("ins_cross_sell_FeatureImportance.png")
       
