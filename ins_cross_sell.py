@@ -21,10 +21,12 @@ st.write("Visit [Kaggle competition page](https://www.kaggle.com/competitions/pl
 ins_cross_sell_sample_train = pd.read_csv("ins_cross_sell_sample_train.csv")
 ins_cross_sell_sample_test = pd.read_csv("ins_cross_sell_sample_test.csv")
 
-with st.expander(st.info("View Sample Train Data (Copy & paste values below to test)")):
+with st.expander():
+    st.info("View Sample Train Data (Copy & paste values below to test)")
     st.dataframe(ins_cross_sell_sample_train, hide_index=True, use_container_width=True)
 
-with st.expander(st.info("View Sample Unseen Data (Copy & paste values below to test)")):
+with st.expander():]
+    st.info("View Sample Unseen Data (Copy & paste values below to test)")
     st.dataframe(ins_cross_sell_sample_test, hide_index=True, use_container_width=True)
 
 st.write("Fill out the client realted details below to check the Insurance Cross Selling prediction.")
